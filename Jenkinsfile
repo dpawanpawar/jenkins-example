@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Run a Windows command to check Python version
-                    def pythonVersion = bat(script: 'python --version 2>&1', returnStatus: true)
+                    def pythonVersion = bat(script: 'py -3 --version 2>&1', returnStatus: true)
 
                     if (pythonVersion == 0) {
                         echo "Python Version: ${pythonVersion}"
