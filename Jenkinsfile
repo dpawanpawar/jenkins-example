@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     // Set up a Python environment
-                    def pythonVersion = '3.9'
+                    def pythonVersion = '3.9.7'
                     def pythonHome = tool name: "Python${pythonVersion}", type: 'hudson.plugins.python.PythonInstallation'
                     env.PATH = "${pythonHome}\\Scripts;${env.PATH}"
 
