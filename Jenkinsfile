@@ -13,15 +13,15 @@ pipeline {
             steps {
                 script {
                     // Set up a Python environment
-                    def pythonVersion = '3.9.7'
-                    def pythonHome = tool name: "Python${pythonVersion}", type: 'hudson.plugins.python.PythonInstallation'
-                    env.PATH = "${pythonHome}\\Scripts;${env.PATH}"
+                    //def pythonVersion = '3.9.7'
+                    //def pythonHome = tool name: "Python${pythonVersion}", type: 'hudson.plugins.python.PythonInstallation'
+                    //env.PATH = "${pythonHome}\\Scripts;${env.PATH}"
 
                     // Install dependencies (if needed)
                    // bat 'pip install -r requirements.txt'  // Replace with your requirements file
 
                     // Run the Python script
-                    bat 'python hello.py'  // Replace with the actual name of your Python script
+                    bat 'py -3 hello.py'  // Replace with the actual name of your Python script
                 }
             }
         }
