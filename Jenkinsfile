@@ -18,10 +18,10 @@ pipeline {
                     env.PATH = "${pythonHome}\\Scripts;${env.PATH}"
 
                     // Install dependencies (if needed)
-                    bat 'pip install -r requirements.txt'  // Replace with your requirements file
+                   // bat 'pip install -r requirements.txt'  // Replace with your requirements file
 
                     // Run the Python script
-                    bat 'python my_script.py'  // Replace with the actual name of your Python script
+                    bat 'python hello.py'  // Replace with the actual name of your Python script
                 }
             }
         }
